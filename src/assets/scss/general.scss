@@ -5,9 +5,16 @@
 @mixin border{
 	border: 1px solid red;
 }
+
 //General Styles
-.wrapp{
+.wrapp{	
 	@include grid-column-row();
 	background-color: $white;
-	//border: 1px solid red;
 }
+
+.divider_l_0{
+	margin: .35rem auto;
+	border-bottom: 2px solid $medium-gray;
+}
+
+.divider_l_1{}

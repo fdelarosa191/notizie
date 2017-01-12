@@ -1,44 +1,63 @@
-// header Styles
-.hdr__top{
+// Header Styles (hdr)
+.hdr{
 	@include grid-row;
 	@include grid-row-size(95%);
-	//@include flex;
-	.hdr__date{
-		@include grid-col;
-		@include breakpoint(small){
-			@include grid-col-size(3);
-		}
-
-	}
-	.hdr__mini-logo{
-		@include grid-col;
-		@include breakpoint(small){
-			@include grid-col-size(6);
-		}
-	}
-	.hdr__eyelash{
-		@include grid-col;
-		@include breakpoint(small){
-			@include grid-col-size(3);
-		}
-		background-color: $light-gray;
-		//@include flex-align-self(middle);
-	}
 }
 
-.hdr__social{
-	@include grid-row;
-	@include grid-row-size(95%);
-	.hdr__weather{
-		@include grid-col;
-		@include breakpoint(small){
-			@include grid-col-size(6);
+//** Header Top (hdr__top)
+	.hdr__top{
+		@include grid-row;
+		.hdr__date{
+			height: 60px;
+			@include grid-col;
+			@include breakpoint(small){
+				@include grid-col-size(4);
+			}
+			@include breakpoint(medium){
+				padding-left: 0;
+				@include grid-col-size(4);
+			}			
+			@include flex;
+			@include flex-align(justify);
+			.date{
+				@include flex-align-self(bottom);
+			}
+				.date__time{
+					line-height: 0;
+				}			
+		}
+		.hdr__eyelash{
+			background-color: $light-gray;
+			height: 60px;
+			@include grid-col;
+			@include breakpoint(small){
+				@include grid-col-size(3);
+			}
 		}
 	}
-	.hdr__social-icons{
-		@include grid-col;
-		@include breakpoint(small){
-			@include grid-col-size(6);
+
+//** Header Social (hdr__social)
+	.hdr__social{
+		@include grid-row;
+		.hdr__weather{
+			@include grid-col;
+			@include breakpoint(small){
+				@include grid-col-size(6);
+			}
+			@include breakpoint(medium){
+				padding-left: 0;
+				@include grid-col-size(6);
+			}			
+
+		}
+		.hdr__social-icons{
+			@include grid-col;
+			@include breakpoint(small){
+				@include grid-col-size(6);
+			}
+			@include breakpoint(medium){
+				@include grid-col-size(6);
+			}
+
 		}
 	}
-}
