@@ -18,3 +18,13 @@
 }
 
 .divider_l_1{}
+
+.menu_type_social{
+	@include flex-align(right);
+	li{
+		a{
+			color: $black;
+			padding: $menu-item-padding-min;
+		}
+	}
+}
