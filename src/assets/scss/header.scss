@@ -62,9 +62,7 @@
 		}
 	}
 
-//** Header Social (hdr__social)
+//** Header Brand (hdr__brand)
 	.hdr__brand{
-		@include grid-column-row();	
-		@include flex;
-		@include flex-align(center);
+		@include grid-column-row();
 	}

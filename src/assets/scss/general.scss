@@ -7,11 +7,14 @@
 }
 
 //General Styles
+
+//wrapper
 .wrapp{	
 	@include grid-column-row();
 	background-color: $white;
 }
 
+//dividers
 .divider_l_0{
 	margin: .35rem auto;
 	border-bottom: 2px solid $medium-gray;
@@ -19,6 +22,7 @@
 
 .divider_l_1{}
 
+//menus
 .menu_type_social{
 	@include flex-align(right);
 	li{
@@ -27,4 +31,17 @@
 			padding: $menu-item-padding-min;
 		}
 	}
+}
+
+//logos
+.logo_s_l{
+	padding: 1.5rem;
+	@include grid-row;
+	.logo__link{
+		@include flex;
+		@include flex-align(center);
+		.logo__img{
+			height: 120px;
+		}
+	}	
 }
