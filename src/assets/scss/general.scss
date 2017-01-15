@@ -20,7 +20,9 @@
 	border-bottom: 2px solid $medium-gray;
 }
 
-.divider_l_1{}
+.divider_l_1{
+	border-bottom: 3px solid $black;
+}
 
 //menus
 .menu_type_social{
@@ -35,13 +37,12 @@
 
 //logos
 .logo_s_l{
-	padding: 1.5rem;
-	@include grid-row;
+	@include flex;
+	@include flex-align(center);
 	.logo__link{
-		@include flex;
-		@include flex-align(center);
+		width: 550px;
 		.logo__img{
-			height: 120px;
-		}
-	}	
+			padding: 0.2rem;
+		}		
+	}
 }

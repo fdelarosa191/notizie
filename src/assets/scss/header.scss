@@ -1,4 +1,4 @@
-// Header Styles (hdr)
+// Header (hdr)
 .hdr{
 	@include grid-row;
 	@include grid-row-size(95%);
@@ -64,5 +64,5 @@
 
 //** Header Brand (hdr__brand)
 	.hdr__brand{
-		@include grid-column-row();
+		@include callout-base;
 	}
