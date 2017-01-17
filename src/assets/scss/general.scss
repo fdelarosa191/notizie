@@ -27,12 +27,37 @@
 //menus
 .menu_type_social{
 	@include flex-align(right);
+	@include breakpoint(small){
+		li{
+			a{
+				color: $black;
+				padding: 0.2rem 0.28rem;
+			}
+		}	
+	}
+	@include breakpoint(medium){
+		li{
+			a{
+				color: $black;
+				padding: 0.2rem 0.4rem;
+			}
+		}	
+	}	
+}
+
+.menu_type_icon{
+	//@include border;
+	@include flex-align(center);
+	@include flex-align-self(middle);
 	li{
 		a{
-			color: $black;
-			padding: $menu-item-padding-min;
+			color: $notizie-div-color;
+			padding: 0.2rem 0.28rem;
+			&:hover{
+				color: $black;
+			}			
 		}
-	}
+	}		
 }
 
 //logos
@@ -45,4 +70,9 @@
 			padding: 0.2rem;
 		}		
 	}
+}
+
+//Hide for small only (hfso)
+.hfso{
+	@include hide-for-only(small);
 }
