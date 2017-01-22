@@ -63,7 +63,7 @@
 				padding-right: 1.2rem;
 			}
 			@include breakpoint(medium){
-				@include grid-col-size(12);
+				@include grid-col-size(6);
 				padding-left: 0;
 				padding-right: 1.2rem;
 			}
@@ -73,7 +73,22 @@
 			}
 		}
 		.news__sidebar{
-			@extend .news__home;
 			background-color: $light-gray;
 			padding: 0;
+			@include grid-col;
+			@include breakpoint(small){
+				@include grid-col-size(12);
+				padding-left: 0;
+				padding-right: 1.2rem;
+			}
+			@include breakpoint(medium){
+				@include grid-col-size(12);
+				padding-left: 0;
+				padding-right: 1.2rem;
+			}
+			@include breakpoint(large){
+				@include grid-col-size(4);
+				padding-left: 0;
+			}
 		}
+			
