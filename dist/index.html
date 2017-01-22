@@ -71,7 +71,6 @@
     			<article class="b-news">
     				<a href="#" class="b-news__link">
     					<h2 class="b-news__header">Lorem ipsum dolor sit amet</h2>
-    					<p class="b-news__excerpt hfso">Lorem ipsum dolor sit amet, consectetur...</p>
     				</a>
     				<div class="b-news__categories">
     					<a class="b-news__category" href="#">Business</a> - 
@@ -86,7 +85,6 @@
     			<article class="b-news">
     				<a href="#" class="b-news__link">
     					<h2 class="b-news__header">Lorem ipsum dolor sit amet</h2>
-    					<p class="b-news__excerpt hfso">Lorem ipsum dolor sit amet, consectetur...</p>
     				</a>
     				<div class="b-news__categories">
     					<a class="b-news__category" href="#">Business</a> - 
@@ -98,7 +96,6 @@
     			<article class="b-news">
     				<a href="#" class="b-news__link">
     					<h2 class="b-news__header">Lorem ipsum dolor sit amet</h2>
-    					<p class="b-news__excerpt hfso">Lorem ipsum dolor sit amet, consectetur...</p>
     				</a>
     				<div class="b-news__categories">
     					<a class="b-news__category" href="#">Business</a> - 
@@ -110,9 +107,10 @@
     	
     		<hr class="divider_l_1">
     		
-    		<!-- Slider -->
-    		<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+    		<!-- Slider (cnt__slider)-->
+    		<div class="orbit " role="region" aria-label="Favorite Space Pictures" data-orbit>
     		  <ul class="orbit-container">
+    		    
     		    <button class="orbit-previous">
     		      <span class="show-for-sr">Previous Slide</span>
     		      <i class="fa fa-arrow-left" aria-hidden="true"></i>
@@ -120,37 +118,77 @@
     		    <button class="orbit-next">
     		      <span class="show-for-sr">Next Slide</span>
     		      <i class="fa fa-arrow-right" aria-hidden="true"></i>
-    		    </button>
+    		    </button>  
     		    
     		    <li class="orbit-slide">
-    		      <a href="#">
-    		        <img class="orbit-image" src="assets/img/notizie-post-taxi.jpg" alt="Space">
-    		      </a>
-    		      <figcaption class="orbit-caption">
-    		          <a href="#"><h1>Lets Rocket!. Space, the final frontier.</h1></a>
-    		          <a href="#"><span>Business</span></a>
-    		      </figcaption>
-    		    </li>    
-    		    <li class="orbit-slide">
-    		      <a href="#">
-    		        <img class="orbit-image" src="assets/img/notizie-post-taxi.jpg" alt="Space">
-    		      </a>
-    		      <figcaption class="orbit-caption">
-    		          <a href="#"><h1>Lets Rocket!. Space, the final frontier.</h1></a>
-    		          <a href="#"><span>Business</span></a>
-    		      </figcaption>
+    		      <article class="slide__article">
+    		        <figure class="slide__figure">
+    		          <img class="slide__image" src="assets/img/notizie-post-taxi.jpg" alt="">
+    		          <figcaption class="slide__caption">
+    		            <h1 class="slide__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+    		          </figcaption>
+    		        </figure>
+    		        <div class="slide__excerpt">
+    		          <a href="#" class="slide__cat">Business</a>, 
+    		          <a href="#" class="slide__cat">World</a>
+    		          <span class="slide__meta">
+    		            By: <a href="#" class="slide__author">Monsieour le Chifie</a>, September 29 1988
+    		          </span>
+    		          <p class="slide__excerpt-content">
+    		            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequatur reiciendis eum quae ipsam eaque rem.
+    		          </p>
+    		        </div>
+    		      </article>
     		    </li>
-    		    <hr>   
+    		    <li class="orbit-slide">
+    		      <article class="slide__article">
+    		        <figure class="slide__figure">
+    		          <img class="slide__image" src="assets/img/notizie-post-taxi.jpg" alt="">
+    		          <figcaption class="slide__caption">
+    		            <h1 class="slide__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+    		          </figcaption>
+    		        </figure>
+    		        <div class="slide__excerpt">
+    		          <a href="#" class="slide__cat">Business</a>, 
+    		          <a href="#" class="slide__cat">World</a>
+    		          <span class="slide__meta">
+    		            By: <a href="#" class="slide__author">Monsieour le Chifie</a>, September 29 1988
+    		          </span>
+    		          <p class="slide__excerpt-content">
+    		            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequatur reiciendis eum quae ipsam eaque rem.
+    		          </p>
+    		        </div>
+    		      </article>
+    		    </li>    
+    		
     		  </ul>
     		</div>
     	
-    		<div style="background-color: grey; margin-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate voluptate iste maiores aliquam ad, ducimus laudanstium, id vero, aliquid inventore aut rerum deserunt quia similique architecto saepe ut corporis iure!</div>
-    		
-    		<div class="row">
-    			<div class="column large-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore odio laboriosam consectetur temporibus dicta totam fugit magnam explicabo, fuga soluta doloribus. Id sed mollitia iure hic magni veniam laborum aliquid!</div>
-    			<div class="column large-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum impedit cupiditate ea sequi reiciendis. Recusandae quibusdam dicta, fuga, illum commodi distinctio? Ex ipsam, hic illum in et temporibus quas veritatis!</div>
-    			<div class="column large-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptas ipsam consectetur adipisci minima aspernatur perspiciatis corrupti quisquam dolor et? Impedit, voluptatibus. Obcaecati aut libero et! Distinctio quia, atque commodi.</div>
-    		</div>
+    		<!-- Content News (cnt__news)-->
+    		<section class="cnt__news">	
+    			<div class="news__home">
+    				<article>
+    					<figure>
+    						<img src="assets/img/notizie-post-taxi.jpg" alt="">
+    					</figure>
+    					<h2>Lorem Ipsum Dolor</h2>
+    					<p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corporis officia delectus, non doloremque sint quae magni numquam ullam quaerat suscipit maiores facilis, sit debitis autem recusandae illo aliquid vel?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, nostrum explicabo commodi aliquid quis ipsam sit, cum in distinctio nihil obcaecati. Autem cumque iure, repudiandae hic dolore! Dolores, adipisci, cupiditate!</p>
+    				</article>
+    			</div>
+    			<div class="news__home">
+    				<article>
+    					<h2>Lorem Ipsum Dolor</h2>
+    					<p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corporis officia delectus, non doloremque sint quae magni numquam ullam quaerat suscipit maiores facilis, sit debitis autem recusandae illo aliquid vel?</p>
+    				</article>
+    				<article>
+    					<h2>Lorem Ipsum Dolor</h2>
+    						<figure>
+    							<img src="assets/img/notizie-post-taxi.jpg" alt="">
+    						</figure>
+    				</article>			
+    			</div>
+    			<aside class="news__sidebar"><p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam cum rerum sed nostrum corporis officia ullam aspernatur atque voluptatibus sit, laborum, ad saepe architecto deserunt eius ex nam, iusto tempora.</p></aside>
+    		</section>
     	
     	</section>
     </div>

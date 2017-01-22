@@ -1,6 +1,7 @@
-<!-- Slider -->
-<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+<!-- Slider (cnt__slider)-->
+<div class="orbit " role="region" aria-label="Favorite Space Pictures" data-orbit>
   <ul class="orbit-container">
+    
     <button class="orbit-previous">
       <span class="show-for-sr">Previous Slide</span>
       <i class="fa fa-arrow-left" aria-hidden="true"></i>
@@ -8,26 +9,48 @@
     <button class="orbit-next">
       <span class="show-for-sr">Next Slide</span>
       <i class="fa fa-arrow-right" aria-hidden="true"></i>
-    </button>
+    </button>  
     
     <li class="orbit-slide">
-      <a href="#">
-        <img class="orbit-image" src="{{root}}assets/img/notizie-post-taxi.jpg" alt="Space">
-      </a>
-      <figcaption class="orbit-caption">
-          <a href="#"><h1>Lets Rocket!. Space, the final frontier.</h1></a>
-          <a href="#"><span>Business</span></a>
-      </figcaption>
-    </li>    
-    <li class="orbit-slide">
-      <a href="#">
-        <img class="orbit-image" src="{{root}}assets/img/notizie-post-taxi.jpg" alt="Space">
-      </a>
-      <figcaption class="orbit-caption">
-          <a href="#"><h1>Lets Rocket!. Space, the final frontier.</h1></a>
-          <a href="#"><span>Business</span></a>
-      </figcaption>
+      <article class="slide__article">
+        <figure class="slide__figure">
+          <img class="slide__image" src="{{root}}assets/img/notizie-post-taxi.jpg" alt="">
+          <figcaption class="slide__caption">
+            <h1 class="slide__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+          </figcaption>
+        </figure>
+        <div class="slide__excerpt">
+          <a href="#" class="slide__cat">Business</a>, 
+          <a href="#" class="slide__cat">World</a>
+          <span class="slide__meta">
+            By: <a href="#" class="slide__author">Monsieour le Chifie</a>, September 29 1988
+          </span>
+          <p class="slide__excerpt-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequatur reiciendis eum quae ipsam eaque rem.
+          </p>
+        </div>
+      </article>
     </li>
-    <hr>   
+    <li class="orbit-slide">
+      <article class="slide__article">
+        <figure class="slide__figure">
+          <img class="slide__image" src="{{root}}assets/img/notizie-post-taxi.jpg" alt="">
+          <figcaption class="slide__caption">
+            <h1 class="slide__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+          </figcaption>
+        </figure>
+        <div class="slide__excerpt">
+          <a href="#" class="slide__cat">Business</a>, 
+          <a href="#" class="slide__cat">World</a>
+          <span class="slide__meta">
+            By: <a href="#" class="slide__author">Monsieour le Chifie</a>, September 29 1988
+          </span>
+          <p class="slide__excerpt-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequatur reiciendis eum quae ipsam eaque rem.
+          </p>
+        </div>
+      </article>
+    </li>    
+
   </ul>
 </div>
