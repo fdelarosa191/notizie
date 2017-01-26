@@ -33,6 +33,7 @@
 			a{
 				color: $black;
 				padding: 0.2rem 0.28rem;
+				font-weight: 'Oswald', sans-serif;
 			}
 		}	
 	}
@@ -41,6 +42,7 @@
 			a{
 				color: $black;
 				padding: 0.2rem 0.4rem;
+				font-weight: 'Oswald', sans-serif;				
 			}
 		}	
 	}	
@@ -65,11 +67,29 @@
 .logo_s_l{
 	@include flex;
 	@include flex-align(center);
-	.logo__link{
-		width: 550px;
-		.logo__img{
-			padding: 0.2rem;
-		}		
+	@include breakpoint(small){
+		.logo__link{
+			width: 450px;
+			.logo__img{
+				padding: 0.2rem;
+			}
+		}
+	}
+	@include breakpoint(medium){
+		.logo__link{
+			width: 500px;
+			.logo__img{
+				padding: 0.2rem;
+			}
+		}
+	}
+	@include breakpoint(large){
+		.logo__link{
+			width: 550px;
+			.logo__img{
+				padding: 0.2rem;
+			}
+		}
 	}
 }
 

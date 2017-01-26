@@ -11,17 +11,50 @@
 		background-size: 0.53033em 0.53033em;
 		.b-news{
 			@include grid-col;
+			padding: .8rem;
 			@include breakpoint(small){
 				@include grid-col-size(12);
 				/*@include flex;
 				@include flex-align(center);*/
+				text-align: center;
 			}
 			@include breakpoint(medium){
 				@include grid-col-size(4);
+				text-align: left;
 			}			
 			@include breakpoint(large){
 				@include grid-col-size(4);
+				text-align: left;
 			}
+			.b-news__link{
+				color: $notizie-pri-text-color;
+				&:hover {
+					color: $notizie-pri-color-dark;
+				}
+			}
+				.b-news__header{
+					font-family: 'Oswald', sans-serif;
+					font-weight: 400;
+					font-size: 1.1rem;
+					text-transform: uppercase;
+				}
+				.b-news__categories{
+					margin-left: 0;
+					margin-bottom: 0;
+					.b-news__category{
+						//@include border;
+						list-style: none;
+						display: inline;
+						font-size: .9rem;
+						font-weight: 700;
+						.b-news__category-link{
+							color: $black;
+							&:hover{
+								color: $notizie-pri-color-dark;
+							}
+						}
+					}
+				}
 		}
 	}
 

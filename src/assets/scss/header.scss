@@ -26,7 +26,11 @@
 				@include flex-align-self(bottom);
 			}
 				.date__time{
+					//@include border;
 					line-height: 0;
+					font-family: 'Oswald', sans-serif;
+					text-transform: uppercase;
+					font-weight: 400;
 				}			
 		}
 		.hdr__eyelash{
@@ -56,7 +60,10 @@
 			@include breakpoint(medium){
 				@include grid-col-size(6);
 			}
-
+			.weather{
+				font-family: 'Oswald', sans-serif;
+				font-weight: 300;
+			}
 		}
 		.hdr__social-icons{
 			@include grid-col;
