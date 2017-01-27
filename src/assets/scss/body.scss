@@ -11,19 +11,20 @@
 		background-size: 0.53033em 0.53033em;
 		.b-news{
 			@include grid-col;
-			padding: .8rem;
 			@include breakpoint(small){
+				//@include border;
 				@include grid-col-size(12);
-				/*@include flex;
-				@include flex-align(center);*/
+				padding: .6rem;
 				text-align: center;
 			}
 			@include breakpoint(medium){
 				@include grid-col-size(4);
+				padding: .8rem;				
 				text-align: left;
 			}			
 			@include breakpoint(large){
 				@include grid-col-size(4);
+				padding: .8rem;				
 				text-align: left;
 			}
 			.b-news__link{
@@ -35,8 +36,19 @@
 				.b-news__header{
 					font-family: 'Oswald', sans-serif;
 					font-weight: 400;
-					font-size: 1.1rem;
 					text-transform: uppercase;
+					@include breakpoint(small){
+						//@include border;
+						margin-bottom: 0;
+						font-size: .9rem;
+					}
+					@include breakpoint(medium){
+						//@include border;
+						font-size: 1rem;
+					}
+					@include breakpoint(large){
+						font-size: 1.1rem;
+					}
 				}
 				.b-news__categories{
 					margin-left: 0;
@@ -69,7 +81,20 @@
 		}
 		.slide__title{
 			color: $white;
-			line-height: 1;
+			line-height: 1.2;
+			font-family: 'Oswald', sans-serif;
+			font-weight: 900;
+			text-transform: uppercase;
+			@include breakpoint(small){
+				//@include border;
+				font-size: 1.6rem;
+			}
+			@include breakpoint(medium){
+				font-size: 2.5rem;
+			}
+			@include breakpoint(large){
+				font-size: 3.3rem;
+			}			
 		}
 	}
 
@@ -77,7 +102,33 @@
 		background-color: $light-gray;
 		padding: .8rem 1rem;
 	}
+		.slide__category{
+		margin-left: 0;
+			font-size: .9rem;
+			font-weight: 700;
+			color: $black;
+			&:hover{
+				color: $notizie-pri-color-dark;
+			}
+		}
+		.slide__meta{
+			font-size: .9rem;			
+			font-family: 'Merriweather', serif;
+			font-weight: 300;
+			font-style: italic;
+				.slide__author{
+					font-weight: 700;
+						color: $black;
+						&:hover{
+							color: $notizie-pri-color-dark;
+						}
+				}
+		}
+		
 		.slide__excerpt-content{
+			font-size: .9rem;			
+			font-family: 'Merriweather', serif;
+			font-weight: 300;
 			margin-bottom: 0;
 		}
 
