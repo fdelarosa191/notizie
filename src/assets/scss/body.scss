@@ -12,7 +12,6 @@
 		.b-news{
 			@include grid-col;
 			@include breakpoint(small){
-				//@include border;
 				@include grid-col-size(12);
 				padding: .6rem;
 				text-align: center;
@@ -38,12 +37,10 @@
 					font-weight: 400;
 					text-transform: uppercase;
 					@include breakpoint(small){
-						//@include border;
 						margin-bottom: 0;
 						font-size: .9rem;
 					}
 					@include breakpoint(medium){
-						//@include border;
 						font-size: 1rem;
 					}
 					@include breakpoint(large){
@@ -54,7 +51,6 @@
 					margin-left: 0;
 					margin-bottom: 0;
 					.b-news__category{
-						//@include border;
 						list-style: none;
 						display: inline;
 						font-size: .9rem;
@@ -140,24 +136,48 @@
 		@include grid-row;
 	}
 
-//** news Home (news__home)
+//** news Home (news__home)		
 		.news__home{
 			@include grid-col;
 			@include breakpoint(small){
 				@include grid-col-size(12);
-				padding-left: 0;
-				padding-right: 1.2rem;
 			}
 			@include breakpoint(medium){
 				@include grid-col-size(6);
-				padding-left: 0;
-				padding-right: 1.2rem;
 			}
 			@include breakpoint(large){
 				@include grid-col-size(4);
-				padding-left: 0;
 			}
 		}
+			.news__home_left{
+				@include breakpoint(small){
+					padding-left: 0;
+					padding-right: 0;
+				}
+				@include breakpoint(medium){
+					padding-left: 0;
+					padding-right: 1.2rem;
+				}
+				@include breakpoint(large){
+					padding-left: 0;
+					padding-right: 1.2rem;
+				}
+			}
+			.news__home_right{
+				@include breakpoint(small){
+					padding-left: 0;
+					padding-right: 0;
+				}
+				@include breakpoint(medium){
+					padding-left: 0;
+					padding-right: 0;
+				}
+				@include breakpoint(large){
+					padding-left: 0;
+					padding-right: 1.2rem;
+				}
+			}
+		
 		.post-home{
 			.post-home__title{}
 			.post-home__categories{
