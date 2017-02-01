@@ -180,7 +180,18 @@
 			}
 		
 		.post-home{
-			.post-home__title{}
+			//@include border;
+			.post-home__title-link{
+				color: $black;
+				&:hover{
+					color: $notizie-pri-color-dark;
+				}				
+			}
+				.post-home__title{@include border;
+					font-family: 'Playfair Display', serif;
+					font-weight: 900;
+					font-size: 1.6rem;
+				}
 			.post-home__categories{
 				margin-left: 0;
 				.post-home__category{
@@ -188,7 +199,10 @@
 					display: inline;
 				}
 			}
-			.post-home__meta{}
+			.post-home__meta{
+				font-family: 'Oswald', sans-serif;
+				font-weight: 300;
+			}
 			.post-home__exerpt{
 				text-align:justify;
 			}
