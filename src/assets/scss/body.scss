@@ -136,8 +136,9 @@
 		@include grid-row;
 	}
 
-//** news Home (news__home)		
+//** News Home (news__home)
 		.news__home{
+			margin-bottom: .8rem;
 			@include grid-col;
 			@include breakpoint(small){
 				@include grid-col-size(12);
@@ -193,7 +194,7 @@
 			}
 		}
 
-
+//** News Sidebar (news__sidebar)
 		.news__sidebar{
 			background-color: $light-gray;
 			padding: 0;
@@ -214,4 +215,3 @@
 				/*padding-left: 0;*/
 			}
 		}
-			
