@@ -180,6 +180,9 @@
 			}
 		
 		.post-home{
+			.post-home__figure{
+				margin-bottom: .5rem;
+			}
 			//@include border;
 			.post-home__title-link{
 				color: $black;
@@ -192,6 +195,8 @@
 					font-family: 'Playfair Display', serif;
 					font-weight: 900;
 					font-size: 1.4rem;
+					line-height: 1.16;
+					margin-bottom: 0;
 					//text-transform: uppercase;
 				}
 			.post-home__categories{
